@@ -1,0 +1,21 @@
+{
+  "name": "kubera-admin-portal",
+  "version": "1.0.0",
+  "description": "Kubera Admin Portal - Complete recruiter management system",
+  "main": "server/index.js",
+  "scripts": {
+    "install-all": "npm install && cd client && npm install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && nodemon index.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "cd server && node index.js"
+  },
+  "keywords": ["kubera", "admin", "portal", "recruiter"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.2"
+  }
+}
